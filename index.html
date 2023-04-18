@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript/canvas.js" type="module" defer></script>
+    <script src="javascript/helper.js" type="module" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="custom-cursor"></div>
+
+    <div id="container">
+      <div id="tool-bar">
+        <div id="eraser">
+          <img class="img" id="eraser-img" src="./imgs/eraser.png" />
+          <div class="width" id="eraser-width">
+            <select class="width-options" id="eraser-width-options">
+              <option class="options" value="1">1</option>
+              <option class="options" value="3">3</option>
+              <option class="options" value="5">5</option>
+              <option class="options" value="10" selected>10</option>
+              <option class="options" value="15">15</option>
+              <option class="options" value="20">20</option>
+              <option class="options" value="25">25</option>
+              <option class="options" value="30">30</option>
+              <option class="options" value="35">35</option>
+              <option class="options" value="40">40</option>
+              <option class="options" value="45">45</option>
+              <option class="options" value="50">50</option>
+              <option class="options" value="55">55</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="pencil">
+          <img class="img" id="pencil-img" src="./imgs/pencil.png" />
+          <div class="width" id="line-width">
+            <select class="width-options" id="line-width-options">
+              <option class="options" value="1">1</option>
+              <option class="options" value="3">3</option>
+              <option class="options" value="5" selected>5</option>
+              <option class="options" value="10">10</option>
+              <option class="options" value="15">15</option>
+              <option class="options" value="20">20</option>
+              <option class="options" value="25">25</option>
+              <option class="options" value="30">30</option>
+              <option class="options" value="35">35</option>
+              <option class="options" value="40">40</option>
+              <option class="options" value="45">45</option>
+              <option class="options" value="50">50</option>
+              <option class="options" value="55">55</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="colors-container"></div>
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+  </body>
+</html>
